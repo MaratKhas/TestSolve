@@ -1,0 +1,12 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Количество сообщений";
+}
+<h1>Ввод количества сообщений</h1>
+
+<form method="post" asp-controller = "Home" asp-action="Result">
+        @for(short i = 1; i <= Model.CountStudent; i++){
+            <div >Студент  @i <input asp-for="CountMess" name = "countMess" /></div>
+        }
+        <input type="submit" name="Отправить"/>
+</form>
