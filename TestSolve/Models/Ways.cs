@@ -6,7 +6,7 @@
 
         public Ways(int countStudent)
         {
-            way = new int[countStudent, countStudent];
+            way = new int[countStudent, countStudent];     
         }
     }
 }
