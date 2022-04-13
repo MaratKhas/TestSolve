@@ -3,7 +3,7 @@
     ViewData["Title"] = "Количество студентов";
 }
 <h1>Введите количество студентов</h1>
-<form method="post" asp-controller = "Home" asp-action= "MessagesCount">
-    <input asp-for="CountStudent" id = "studentInput"/>
+<form method="post" asp-controller = "Home" asp-action = "MessagesCount" id="StudentCountForm">
+    <input asp-for="CountStudent" name = "CountStudent" value="2"/>
     <input type="submit" name="Дальше"/>
 </form>
